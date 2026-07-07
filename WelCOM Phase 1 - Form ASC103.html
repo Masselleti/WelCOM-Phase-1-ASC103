@@ -2249,7 +2249,7 @@
 
         // ===== Select Topics (Learning Mode multi-select, added) =====
         const FORM_DB_PATH = "WelCOM Phase 1 - Form ASC103";
-        const DISCIPLINE_MAP = {"1":"Pathology","2":"Microbiology","3":"Pathology","4":"Physiology","5":"Pharmacology","6":"Immunology","7":"Pathology","8":"Pharmacology","9":"Pharmacology","10":"Gross Anatomy & Embryology","11":"Gross Anatomy & Embryology","12":"Gross Anatomy & Embryology","13":"Gross Anatomy & Embryology","14":"Pharmacology","15":"Behavioral Sciences","16":"Behavioral Sciences","17":"Genetics","18":"Physiology","19":"Gross Anatomy & Embryology","20":"Pathology","21":"Behavioral Sciences","22":"Behavioral Sciences","23":"Pharmacology","24":"Microbiology","25":"Gross Anatomy & Embryology","26":"Behavioral Sciences","27":"Gross Anatomy & Embryology","28":"Pharmacology","29":"Physiology","30":"Behavioral Sciences","31":"Pathology","32":"Gross Anatomy & Embryology","33":"Pharmacology","34":"Pathology","35":"Pathology","36":"Biochemistry & Nutrition","37":"Gross Anatomy & Embryology","38":"Gross Anatomy & Embryology","39":"Genetics","40":"Genetics","41":"Behavioral Sciences","42":"Microbiology","43":"Behavioral Sciences","44":"Pathology","45":"Pathology","46":"Physiology","47":"Pathology","48":"Immunology","49":"Gross Anatomy & Embryology","50":"Behavioral Sciences"};
+        const DISCIPLINE_MAP = {"1":"Pathology","2":"Microbiology","3":"Pathology","4":"Physiology","5":"Pharmacology","6":"Immunology","7":"Pathology","8":"Pharmacology","9":"Pharmacology","10":"Gross Anatomy & Embryology","11":"Gross Anatomy & Embryology","12":"Gross Anatomy & Embryology","13":"Gross Anatomy & Embryology","14":"Pharmacology","15":"Behavioral Sciences","16":"Behavioral Sciences","17":"Genetics","18":"Physiology","19":"Gross Anatomy & Embryology","20":"Pathology","21":"Behavioral Sciences","22":"Behavioral Sciences","23":"Pharmacology","24":"Microbiology","25":"Gross Anatomy & Embryology","26":"Behavioral Sciences","27":"Gross Anatomy & Embryology","28":"Pharmacology","29":"Physiology","30":"Behavioral Sciences","31":"Pathology","32":"Gross Anatomy & Embryology","33":"Pharmacology","34":"Pathology","35":"Pathology","36":"Biochemistry & Nutrition","37":"Gross Anatomy & Embryology","38":"Gross Anatomy & Embryology","39":"Genetics","40":"Genetics","41":"Behavioral Sciences","42":"Microbiology","43":"Behavioral Sciences","44":"Pathology","45":"Pathology","46":"Physiology","47":"Pathology","48":"Immunology","49":"Gross Anatomy & Embryology","50":"Behavioral Sciences","51":"Microbiology","52":"Microbiology","53":"Gross Anatomy & Embryology","54":"Physiology","55":"Physiology","56":"Microbiology","57":"Gross Anatomy & Embryology","58":"Gross Anatomy & Embryology","59":"Physiology","60":"Gross Anatomy & Embryology","61":"Microbiology","62":"Pharmacology","63":"Gross Anatomy & Embryology","64":"Microbiology","65":"Physiology","66":"Pathology","67":"Pathology","68":"Behavioral Sciences","69":"Biochemistry & Nutrition","70":"Gross Anatomy & Embryology","71":"Pathology","72":"Gross Anatomy & Embryology","73":"Pathology","74":"Behavioral Sciences"};
         const DISCIPLINE_DEFS = [{"name": "Pathology", "range": "45-55"}, {"name": "Physiology", "range": "30-40"}, {"name": "Pharmacology", "range": "10-20"}, {"name": "Biochemistry & Nutrition", "range": "5-15"}, {"name": "Microbiology", "range": "10-20"}, {"name": "Immunology", "range": "5-15"}, {"name": "Gross Anatomy & Embryology", "range": "10-20"}, {"name": "Histology & Cell Biology", "range": "5-15"}, {"name": "Behavioral Sciences", "range": "10-15"}, {"name": "Genetics", "range": "5-10"}];
 
         let lmView = 'discipline';
@@ -2298,7 +2298,7 @@
             const note = document.getElementById('lm-note');
             grid.innerHTML = '';
             if (lmView === 'discipline') {
-                note.textContent = 'Questions are grouped by the primary discipline each item tests (inferred from item content). Counts reflect this ASC103 set (50 items) and need not match the USMLE blueprint ranges, which are overlapping content axes.';
+                note.textContent = 'Questions are grouped by the primary discipline each item tests (inferred from item content). Counts reflect this ASC103 set (74 items) and need not match the USMLE blueprint ranges, which are overlapping content axes.';
                 note.style.display = 'block';
                 const counts = disciplineCounts();
                 DISCIPLINE_DEFS.forEach(d => {
@@ -2420,7 +2420,7 @@
             const note = document.getElementById('ex-note');
             grid.innerHTML = '';
             if (exView === 'discipline') {
-                note.textContent = 'Questions are grouped by the primary discipline each item tests (inferred from item content). Counts reflect this ASC103 set (50 items) and need not match the USMLE blueprint ranges, which are overlapping content axes.';
+                note.textContent = 'Questions are grouped by the primary discipline each item tests (inferred from item content). Counts reflect this ASC103 set (74 items) and need not match the USMLE blueprint ranges, which are overlapping content axes.';
                 note.style.display = 'block';
                 const counts = disciplineCounts();
                 DISCIPLINE_DEFS.forEach(d => {
