@@ -18,6 +18,6 @@ else
   /usr/bin/open "$URL"
 fi
 
-echo "WelCOM Form ASC103 is open at $URL"
+echo "WelCOM Phase 1 ASC103 is open at $URL"
 echo "Server log: $LOG_FILE"
 echo "You can close this Terminal window."
